@@ -13,4 +13,4 @@ Investigating youth premium - hypothesis that art investors are willing to pay a
 - Python - [Scrapy](https://scrapy.org/) for web-crawling Christie's auction house
 - R - Lmer for mixed model regression
 
-<span class="improved">Link</span> [Project Repo](https://github.com/maerory/art_data)
+<span class="improved">Link</span> [Project Repo](https://github.com/maerory/contemporary_art_thesis)
