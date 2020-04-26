@@ -1,13 +1,13 @@
 # Setup
-title: Noir
-tagline: a dark mode friendly Jekyll theme
-url: https://noir.essentialenemy.com
+title: Joey Yoo
+tagline: Data Science Projects + α
+url: maerory.github.io
 paginate: 1
 baseurl: ""
 permalink: :title/
 
 kramdown:
-    footnote_backlink: "&#10548;"
+  footnote_backlink: "&#10548;"
 
 # Gems
 plugins:
@@ -37,9 +37,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Victor Johnson
-  url: https://twitter.com/essentialenemy
-  email: me@essentialenemy.com
+  name: Joey Yoo
+  url: maerory.github.io
+  email: joeyyoo@uchicago.edu
 
 # Custom vars
 version: 1.3.0
