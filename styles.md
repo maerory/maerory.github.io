@@ -10,10 +10,10 @@ title: Styles
 ## <small>THIS IS A HEADER</small>
 
 This is the font, size, color and spacing of regular ol' paragraph <p> text. Using Markdown makes it dead simple
-to make text *italic*, **bold** or ***bold and italic***.
+to make text _italic_, **bold** or **_bold and italic_**.
 
 term
-: *definition*
+: _definition_
 
 If you want to reference a footnote it appears like this[^1] in a sentence.
 
@@ -24,17 +24,17 @@ If you want to reference a footnote it appears like this[^1] in a sentence.
 
 Quotes look nice:
 
->"My fellow Americans, we are and always will be a nation of immigrants. We were strangers once, too."
+> "My fellow Americans, we are and always will be a nation of immigrants. We were strangers once, too."
 >
-><cite>~ Barack Obama</cite>
+> <cite>~ Barack Obama</cite>
 
 So do tables:
 
-| This          | Is A          | Table |
-| ------------- |:-------------:| -----:|
-| Column 1      | happens to be | left-aligned |
-| Column 2      | is the one    |  that's centered |
-| Column 3      | is actually    |    right-aligned |
+| This     |     Is A      |           Table |
+| -------- | :-----------: | --------------: |
+| Column 1 | happens to be |    left-aligned |
+| Column 2 |  is the one   | that's centered |
+| Column 3 |  is actually  |   right-aligned |
 
 Here are the buttons whose class names and colors can be easily customized:
 
@@ -48,21 +48,23 @@ Here are the buttons whose class names and colors can be easily customized:
 
 <span class="soon">coming soon</span> This span class is named "soon" but you can change it.
 
-
 Remember to buy:
+
 1. Milk
 2. Bread
 3. Eggs
 
 Don't forget:
+
 - To review all code
 - Write up the changelog
 - Make coffee when you're done
 
 To Do:
+
 - [x] Update Homebrew
 - [ ] Update all of your gem dependencies
-- [x] Drag your feet on updating gem dependencies 
+- [x] Drag your feet on updating gem dependencies
 
 Here are the message boxes with the optional close button enabled:
 
@@ -78,20 +80,18 @@ Try to only eat an entire bag of candy once a ~~week~~ month.
 
 If you include any inline `code` it looks awesome.
 
-A code block highlights the [syntax](https://en.wikipedia.org/wiki/Syntax_(programming_languages)) and displays the language:
+A code block highlights the [syntax](<https://en.wikipedia.org/wiki/Syntax_(programming_languages)>) and displays the language:
 
 {% highlight ruby %}
 def test(a=1,b=2,c=a+b)
-  puts "#{a},#{b},#{c}"
+puts "#{a},#{b},#{c}"
 end
-test        =>  1,2,3
-test 5      =>  5,2,7
-test 4, 6   =>  4,6,10
-test 3, 4, 6   =>  3,4,6
+test => 1,2,3
+test 5 => 5,2,7
+test 4, 6 => 4,6,10
+test 3, 4, 6 => 3,4,6
 {% endhighlight %}
 
- 
-
-***
+---
 
 [^1]: When a footnote is clicked or tapped on it will be highlighted and outlined Wikipedia-style.

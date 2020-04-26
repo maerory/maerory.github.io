@@ -1,0 +1,13 @@
+I"<h3 id="summary">Summary</h3>
+
+<p>Investigating youth premium - hypothesis that art investors are willing to pay a premium for younger artist’s work - in the contemporary art market. Collected 35k sales of contemporary artworks of artists born after 1900. Analzyzed using mixed model regressions.</p>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+  <li>Python - <a href="https://scrapy.org/">Scrapy</a> for web-crawling Christie’s auction house</li>
+  <li>R - Mixed model regression using lmer</li>
+</ul>
+
+<p><span class="improved">Link</span></p>
+:ET
