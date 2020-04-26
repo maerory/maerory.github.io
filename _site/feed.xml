@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Noir</title>
+ <title>Joey Yoo</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-04-25T23:13:34-05:00</updated>
+ <updated>2020-04-26T14:41:49-05:00</updated>
  <id>http://localhost:4000/</id>
  <author>
-   <name>Victor Johnson</name>
-   <email>me@essentialenemy.com</email>
+   <name>Joey Yoo</name>
+   <email>joeyyoo@uchicago.edu</email>
  </author>
 
  
@@ -28,7 +28,7 @@
   &lt;li&gt;R - Lmer for mixed model regression&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;span class=&quot;improved&quot;&gt;Link&lt;/span&gt; &lt;a href=&quot;https://github.com/maerory/art_data&quot;&gt;Project Repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;improved&quot;&gt;Link&lt;/span&gt; &lt;a href=&quot;https://github.com/maerory/contemporary_art_thesis&quot;&gt;Project Repo&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

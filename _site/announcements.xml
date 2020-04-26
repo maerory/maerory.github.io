@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Noir</title>
+ <title>Joey Yoo</title>
  <link href="http://localhost:4000/announcements.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-04-25T23:13:34-05:00</updated>
+ <updated>2020-04-26T14:41:49-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
-   <name>Victor Johnson</name>
-   <email>me@essentialenemy.com</email>
+   <name>Joey Yoo</name>
+   <email>joeyyoo@uchicago.edu</email>
  </author>
 
  
