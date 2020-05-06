@@ -2,7 +2,7 @@
 title: Joey Yoo
 tagline: Data Science Projects + α
 url: maerory.github.io
-paginate: 1
+paginate: 100
 baseurl: ""
 permalink: :title/
 

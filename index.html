@@ -9,8 +9,10 @@ title: Home
     <h1 class="post-title">
       <a
         href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}"
-        >{{ post.title | smartify }}</a
-      >{% if post.link %}<span class="link-arrow"> &rarr;</span>{% endif %}
+      >
+        {{ post.title | smartify }}
+      </a>
+      {% if post.link %}<span class="link-arrow"> &rarr;</span>{% endif %}
     </h1>
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date"
       >{{ post.date | date_to_long_string: "ordinal", "US" }} {% if post %} {%
@@ -35,17 +37,17 @@ title: Home
     </span>
 
     <br />
-    <div class="tag-list">
+    <!-- <div class="tag-list">
       {% if post %} {% assign tags = post.tags %} {% else %} {% assign tags =
       page.tags %} {% endif %} {% for tag in tags %}
       <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">#{{tag}}</a>
       {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
-    </div>
+    </div> -->
   </article>
   {% endfor %}
 </div>
 
-<div class="PageNavigation">
+<!-- <div class="PageNavigation">
   {% if paginator.next_page %}
   <a class="prev" href="{{ paginator.next_page_path | prepend: site.baseurl }}"
     >← Older</a
@@ -57,4 +59,4 @@ title: Home
     >Newer →</a
   >
   {% endif %}
-</div>
+</div> -->
