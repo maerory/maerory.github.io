@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Housing Price Prediction"
-date: 2020-04-20 12:20:45
+date: 2020-05-06
 ---
 
 ### Summary
