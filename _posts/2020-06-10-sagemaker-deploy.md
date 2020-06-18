@@ -25,6 +25,7 @@ Using Amazon Sagemaker, build and deploy a simple PyTorch deep learning model fo
 
 ### Tools
 
-- Python: Sklearn (XGBoost, lasso, ridge)
+- Modelling - Python: PyTorch
+- Deployment - Amazon SageMaker
 
 <span class="improved">Link</span> [Github Notebook](<https://github.com/maerory/AWS-SageMaker-practice/blob/master/Sentiment%20Inference%20(Pytorch-LSTM)/SageMaker%20Project.ipynb>)
