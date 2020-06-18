@@ -1,0 +1,12 @@
+I",<h3 id="summary">Summary</h3>
+
+<p>Using the <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques">House Prices: Advanced Regression Techniques</a> on Kaggle, predict the housing price based on the features. Prediction with various type of regression, enhancing the prediciton by ensemble learning and stacking.</p>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+  <li>Python: Sklearn (XGBoost, lasso, ridge)</li>
+</ul>
+
+<p><span class="improved">Link</span> <a href="https://www.kaggle.com/maeror/housing-price-dataset/">Kaggle Notebook</a></p>
+:ET

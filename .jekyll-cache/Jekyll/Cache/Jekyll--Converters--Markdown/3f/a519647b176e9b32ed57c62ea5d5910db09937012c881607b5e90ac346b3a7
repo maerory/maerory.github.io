@@ -1,0 +1,20 @@
+I"Þ<h2 id="summary">Summary</h2>
+
+<p>Using Amazon Sagemaker, build and deploy a simple PyTorch deep learning model for sentiment analysis in the cloud environment. This post outlines and explains the code required to perform the operation. Acutal execution can be done by copying the notebook from the repo(Add Github Repo).</p>
+
+<h2 id="outline">Outline</h2>
+
+<ol>
+  <li>Data Aquisition - Retrieve, Processs and Upload</li>
+  <li>Model Building - Build, Train and Deploy</li>
+  <li>Model Access and Usage</li>
+</ol>
+
+<h2 id="codebase">Codebase</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">%</span><span class="n">mkdir</span> <span class="o">../</span><span class="n">data</span>
+<span class="err">!</span><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">../</span><span class="n">data</span><span class="o">/</span><span class="n">aclImdb_v1</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> \
+ <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ai</span><span class="o">.</span><span class="n">stanford</span><span class="o">.</span><span class="n">edu</span><span class="o">/~</span><span class="n">amaas</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">sentiment</span><span class="o">/</span><span class="n">aclImdb_v1</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="err">!</span><span class="n">tar</span> <span class="o">-</span><span class="n">zxf</span> <span class="o">../</span><span class="n">data</span><span class="o">/</span><span class="n">aclImdb_v1</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">../</span><span class="n">data</span></code></pre></figure>
+
+:ET

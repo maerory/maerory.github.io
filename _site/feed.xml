@@ -4,7 +4,7 @@
  <title>Joey Yoo</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-04-26T14:41:49-05:00</updated>
+ <updated>2020-06-11T09:19:31-07:00</updated>
  <id>http://localhost:4000/</id>
  <author>
    <name>Joey Yoo</name>
@@ -13,9 +13,55 @@
 
  
  <entry>
+   <title>Amazon Sagemaker Deployment</title>
+   <link href="http://localhost:4000/sagemaker-deploy/"/>
+   <updated>2020-06-10T00:00:00-07:00</updated>
+   <id>http://localhost:4000/sagemaker-deploy</id>
+   <content type="html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Using Amazon Sagemaker, build and deploy a simple PyTorch deep learning model for sentiment analysis in the cloud environment. This post outlines and explains the code required to perform the operation. Acutal execution can be done by copying the notebook from the repo(Add Github Repo).&lt;/p&gt;
+
+&lt;h2 id=&quot;outline&quot;&gt;Outline&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Data Aquisition - Retrieve, Processs and Upload&lt;/li&gt;
+  &lt;li&gt;Model Building - Build, Train and Deploy&lt;/li&gt;
+  &lt;li&gt;Model Access and Usage&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;codebase&quot;&gt;Codebase&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;../&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;O&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;../&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aclImdb_v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gz&lt;/span&gt; \
+ &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ai&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stanford&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;edu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amaas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sentiment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aclImdb_v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gz&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zxf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;../&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aclImdb_v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gz&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;../&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Housing Price Prediction</title>
+   <link href="http://localhost:4000/housingpriceprediction/"/>
+   <updated>2020-05-06T00:00:00-07:00</updated>
+   <id>http://localhost:4000/housingpriceprediction</id>
+   <content type="html">&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;Using the &lt;a href=&quot;https://www.kaggle.com/c/house-prices-advanced-regression-techniques&quot;&gt;House Prices: Advanced Regression Techniques&lt;/a&gt; on Kaggle, predict the housing price based on the features. Prediction with various type of regression, enhancing the prediciton by ensemble learning and stacking.&lt;/p&gt;
+
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Python: Sklearn (XGBoost, lasso, ridge)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;improved&quot;&gt;Link&lt;/span&gt; &lt;a href=&quot;https://www.kaggle.com/maeror/housing-price-dataset/&quot;&gt;Kaggle Notebook&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Investigating Youth Premium in Contemporary Art Market</title>
    <link href="http://localhost:4000/thesis-project/"/>
-   <updated>2020-04-20T07:20:45-05:00</updated>
+   <updated>2020-04-20T05:20:45-07:00</updated>
    <id>http://localhost:4000/thesis-project</id>
    <content type="html">&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
 
