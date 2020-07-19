@@ -6,7 +6,7 @@ title: Resume
 <p class="message">
   Data Scientist + α
 </p>
-<a href https://docs.google.com/document/d/1FbiNUQ34M5SN26jmt5mIvLWDGXKp6BMMQ0Ffc9ZLt7U/edit><span class="improved">Link</span></a>
+<span class="improved">Link</span>[https://docs.google.com/document/d/1FbiNUQ34M5SN26jmt5mIvLWDGXKp6BMMQ0Ffc9ZLt7U/]
 
 ### Education
 
